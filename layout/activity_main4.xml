@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/nonvegimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <!--TITLE-->
+            <TextView
+                android:id="@+id/nonvegtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nonvegimg"
+                android:gravity="center_horizontal"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!--Description heading-->
+            <TextView
+                android:id="@+id/znonvegdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nonvegtitle"
+                android:layout_marginTop="25dp"
+                android:fontFamily="serif"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <!--Description-->
+            <TextView
+                android:id="@+id/nonvegdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/znonvegdesc"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+            <!--Vitamins heading-->
+            <TextView
+                android:id="@+id/znonvegvit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nonvegdesc"
+                android:layout_marginTop="25dp"
+                android:fontFamily="serif"
+                android:text="Vitamins &#38; Minerals"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!--Vitamins-->
+            <TextView
+                android:id="@+id/nonvegvit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/znonvegvit"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+            <!--Prevention Heading-->
+            <TextView
+                android:id="@+id/znonvegprev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nonvegvit"
+                android:layout_marginTop="25dp"
+                android:fontFamily="serif"
+                android:text="Benefits &#38; Disease Prevented"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!--Prevention-->
+            <TextView
+                android:id="@+id/nonvegprev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/znonvegprev"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="20dp"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+          <!--  <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_below="@+id/nonvegprev"
+                />
+-->
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
